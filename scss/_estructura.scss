@@ -1,0 +1,18 @@
+$espaciado: 5px;
+$caja_footer:100%;
+
+.encabezado{
+    text-align: center;
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: normal;
+    
+}
+.encabezado__colores--fondo{
+    color: white;
+    background-color: darkblue;
+    border: 2px solid black;
+}
+.encabezado__letra--padding{
+    padding-top: $espaciado*2;
+}

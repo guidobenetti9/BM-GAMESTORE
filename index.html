@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BM GAMESTORE-La tienda Gamer #1 en argentina </title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <meta name="description" content="Compra tus productos gamer en la tienda mas grande de argentina">
+    <meta name="keyword" content="gamer, comprar, tienda">
+
+</head>
+<body class="bg-dark">
+    <header>   
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="imagenes/BM GAMESTORE.png" alt="" width="100" height="100" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="PAGES/juegos.html" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          JUEGOS
+                        </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                        <li><a class="dropdown-item" href="PAGES/juegos.html">TODOS</a></li>
+                        <li><a class="dropdown-item" href="PAGES/juegos.html">ACCION</a></li>
+                        <li><a class="dropdown-item" href="PAGES/juegos.html">RPG</a></li>
+                        <li><a class="dropdown-item" href="PAGES/juegos.html">DEPORTES</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="PAGES/novedades.html">NOVEDADES</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="PAGES/consolas.html">CONSOLAS</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="PAGES/hardware.html">HARDWARE</a>
+                    </li><li class="nav-item">
+                      <a class="nav-link" href="PAGES/nosotros.html">NOSOTROS</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+
+        </div>
+      </nav>
+
+    </header>
+    <section class="encabezado encabezado__colores--fondo"> 
+        <!--TITULO-->
+        <h1 class="encabezado__letra--padding">BM GAMESTORE</h1> 
+    </section>
+      <div class="ini ini__caja--fondo">
+          <!--INICIO DE SESION-->
+                <h2> <span class="ini__caja--texto"> BIENVENIDO </span> </h2>
+                <h2> <span class="ini__caja--texto"> INICIE SESION </span> </h2>  
+                      
+                <form action="send.php" method="post" enctype="text/plain">
+                <input type="text" name="nombre" placeholder="ingrese su nombre"> 
+                <input type="password" name="contrasenia" placeholder="ingrese contraseña">
+                <input type="submit" name="enviar">
+                <input type="reset" name="resetear">
+                </form>
+                <p> <span class="ini__caja--texto"> ¿no tienes usuario? </span></p>
+                <a href="../PAGES/crear_user.html" class="ini__caja--texto"> <span> Para registrarte clickea aqui! </span> </a>
+        
+      </div>
+      <div class="container bg-primary p-2 bg-opacity-75">
+        <div class="row">
+          <div class="col-sm-2" >
+            <h4 class="destacado destacado__letra text-start bg-success p-2  bg-opacity-75">
+              Destacados 
+               <span class="fw-bold">GAMING </span> 
+            </h4>
+          </div>
+          <div class="col-sm-10">
+            <section class="ordenTarjetas"> 
+           
+              <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                          <div class="carousel-item active d-flex flex-row justify-content-evenly">
+                            <article class="cuerpoTarjeta m-2">
+                              <div class="imagenTamanio">
+                                  <!--IMAGENES DE JUEGOS-->     
+                                  <a href="PAGES/farcry.html"> <img src="imagenes/FAR-CRY-66.png" > </a>      
+                              </div>
+                              <!--PRECIOS-->
+                              <div class="descripcion">
+                                  <h3> FAR CRY 6 </h3>   
+                                  <P>5000$</P>
+                                  <a href="#">COMPRAR</a>
+                              </div>
+                            </article>
+                  
+                            <article class="cuerpoTarjeta m-2">
+                              <!--IMAGENES DE JUEGOS -->
+                            <div class="imagenTamanio">
+                              <a href="PAGES/eldenring.html"> <img src="imagenes/ps5-elden-ring.jpg"> </a>
+                            </div>
+                  
+                            <div class="descripcion">
+                                  <!--PRECIOS-->
+                                  <h3> ELDEN RING </h3> 
+                                  <p>5000$</p> 
+                                  <a href="#">COMPRAR</a>
+                            </div>
+                            
+                            
+                            
+                            </article>
+                  
+                            <article class="cuerpoTarjeta m-2">
+                                <!--IMAGENES DE JUEGOS -->
+                                  <div class="imagenTamanio">
+                                  <a href="PAGES/fifa22.html"> <img src="imagenes/FIFA22.png"> </a>
+                                  </div>
+                                  <div class="descripcion">
+                                  <!--PRECIOS-->
+                                  <h3> FIFA 22 </h3>   
+                                  <P>5000$</P>
+                                  <a href="#">COMPRAR</a>
+                                  </div>
+                      
+                            </article>
+                          </div>
+                          <div class="carousel-item">
+                            <article class="cuerpoTarjeta m-2">
+                                <div class="imagenTamanio">
+                                  <!--IMAGENES DE JUEGOS-->     
+                                  <a href="ps5.html"> <img src="imagenes/consolas/ps5.jpg"> </a>      
+                                </div>
+                             <!--PRECIOS-->
+                                <div class="descripcion ">
+                                  <h4>PlayStation 5 825GB Digital Edition </h4>  
+                                  <P>5000$</P>
+                                  <a href="#">COMPRAR</a>
+                                </div>
+                            </article>
+                        
+                          </div>
+                          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                           <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                           <span class="visually-hidden">Next</span>
+                          </button>
+                    </div>
+              </div>
+            </section>
+          </div>
+      
+        </div>
+      
+      </div>
+    
+    
+    <div>
+        <!--ICONOS DE CONTACTOS-->
+        <img src="imagenes/facebook.png" class=" facebook-tamanio ">
+        <img src="imagenes/instagra.jpg" class=" instagra-tamanio">
+        <img src="imagenes/contacto.jpg" class="contacto-tamanio ">
+
+    </div>
+    <footer>
+        <ul class="container-fluid footer ">
+          <li class="footer__caja--estilos"> <a href="../PAGES/nosotros.html" class="listaSinPuntos" > NOSOTROS </a> </li> 
+          <li class="footer__caja--estilos"> <a href="#" class="listaSinPuntos " >SERVICIO TECNICO </a>  </li> 
+          <li class="footer__caja--estilos "> <a href="#" class="listaSinPuntos"> METODO DE PAGO </a> </li> 
+
+        </ul>
+        
+    </footer>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

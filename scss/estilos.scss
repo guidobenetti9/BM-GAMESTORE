@@ -1,0 +1,386 @@
+@import "estructura";
+@import "colores";
+@import "tipografia";
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+$espaciado: 5px;
+$caja_footer:100%;
+$caja_ini:20rem;
+
+
+$titulos:(titulo:#55acee, subtitulo:#c25E30 );
+
+
+@each $clave, $valor in $titulos {
+    .color-#{$clave} {
+        background-color:$valor;
+    }
+}
+
+.ini {
+    width: $caja_ini*0.7; 
+}
+  .ini__caja--fondo{
+    background-color: black;
+    border: 1px double black;
+    background-repeat: no-repeat;
+    background-position: left;
+    margin-left: 1rem;
+  }
+  .ini__caja--texto{
+    color: white;
+    font-style: italic;
+  }
+/*NAVEGADOR*/
+ .navegador{
+    text-align: center;
+    text-decoration: none;
+    padding: 2rem;
+    border: double black;
+    border-width: 2px;
+    margin: cover;
+    width: 100%;
+    font-weight: 700;
+    transition: 1s,1s;
+}
+.navegador__Color{
+    color: white;
+    background-color: blue;
+}
+.tamanioContenedor{
+    border: 1px solid black;
+    width: 100%; 
+}
+.navegador:hover{
+    transform: scale(1, 1);
+    padding: 1.9rem;
+    font-size: 1.2rem;
+}
+.destacado{
+    border: 1px solid black;
+    border-radius: 2px;
+}
+.destacado__letra{
+    color: black;
+    font-style: italic;
+    
+}
+
+.centrar{
+    text-align: center;
+}
+.fondoTabla{
+    color:white;
+    background-color: darkblue;
+    text-align: left;
+}
+.imagen{
+    text-align: center;
+    
+}
+.fondoJuegos{
+    color:white;
+    background-color: darkblue;
+    text-align: center;
+}
+
+.fondoPag{
+    background-image: url("../imagenes/fondo.jpg");
+}
+.fondoIni{
+    background-color: black;
+    border: 1px double blue;
+    background-repeat: no-repeat;
+    background-position: left;
+    width: 350px;
+}
+.fondoFormulario{
+    color:white;
+    background-color: black;
+    border: 1px double blue;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-self: center;
+    width: 400px;
+}
+.fondoNav{
+    background-color: blue;
+}
+.activo{
+    background-color: indigo;
+}
+.listaSinPuntos{
+    text-decoration: none;
+    color: black;
+}
+/*FOOTER*/
+.footer{
+    list-style-type: none;
+    list-style-position: outside;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.footer__caja--estilos{
+    width: $caja_footer/3;
+    border:1px solid black;
+    background-size: cover;
+    color: black;
+    background-size: cover;
+    text-decoration: none;
+    text-align: center;
+    background-image: linear-gradient(to top, white, blue);
+    padding: 1vh;
+
+}
+/*JUEGOS*/
+.letra{
+    color: black;
+    border: 2px solid black;
+}
+.letra__estilo{
+    font-style: italic;
+    background-color: cyan;
+}
+.parrafo{
+    color: darkgreen;
+    
+}
+.parrafo__estilo{
+    font-style: italic;
+}
+.descripcion{ 
+    height: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 0.5px;
+}
+.descripcion a {
+   text-decoration: none;
+   border: 2px solid black;
+   border-radius: 5px;
+   padding: 0.5rem 1rem;
+   background-color: orange;
+   color: white;
+   font-weight: 700;
+}
+.ordenTarjetas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    margin: 2rem 0;
+    gap: 1rem;
+    justify-items: center;
+}
+/*TARJETAS*/
+.cuerpoTarjeta{
+    align-items: center;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 15rem;
+    height: 26rem;
+    transition: width 1s, height 1s;
+}
+.imagenTamanio img{
+    width: 100%;
+}
+.cuerpoTarjeta:hover{
+    width: 16rem;
+    height: 27rem;
+}
+
+/*CUERPO DE PRODUCTO*/
+.producto{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    border: 2px solid black;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+}
+.producto__fondo{
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    list-style-type: none;
+    
+}
+/*novedades*/
+.descripcionNov{ 
+    height: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 0.5px;
+            a {
+            text-decoration: none;
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 0.5rem 1rem;
+            background-color: orange;
+            color: white;
+            font-weight: 700;
+        }
+}
+.descripcionNov__border{
+    border: 2px solid blueviolet;
+    background-color: cornflowerblue;
+}
+.cuerpoNov{
+    align-items: center;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 28rem;
+    height: 20rem;
+    transition: width 1s, height 1s;
+}
+.cuerpoNov:hover{
+    width: 29rem;
+    height: 21rem;
+}
+/*HARDWARE*/
+.descripcionHar{ 
+    height: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 0.5px;
+}
+.descripcionHar a {
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    background-color: orange;
+    color: white;
+    font-weight: 700;
+ }
+.cuerpoHar{
+    align-items: center;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 17rem;
+    height: 19rem;
+    transition: width 1s, height 1s;
+}
+.cuerpoHar:hover{
+    width: 18rem;
+    height: 20rem;
+}
+.cuerpoJuegos{
+    height: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 0.5px;
+}
+
+/*ICONOS DE CONTACTOS*/
+
+@each $icono in facebook,instagra,contacto {
+    .#{$icono}-tamanio{
+        width: 3rem;
+        height: 3rem;
+    }
+}
+/*TABLET RESPONSIVE*/
+@media only screen and (max-width: 800px) {
+    nav ul, footer {
+    flex-direction: column;
+    align-items: center;
+    }
+.ordenTarjetas{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+}
+.producto{
+    width: 100%;
+}
+.cuerpoTarjeta{
+    align-items: center;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 11rem;
+    height: 20rem;
+    transition: width 1s, height 1s;
+}
+    
+.cuerpoTarjeta:hover{
+    width: 12rem;
+    height: 21rem;
+}
+.cuerpoNov{
+    align-items: center;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 20rem;
+    height: 15rem;
+    transition: width 1s, height 1s;
+}
+.cuerpoNov:hover{
+    width: 21rem;
+    height: 16rem;
+}
+
+.cuerpoHar{
+    align-items: center;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 19rem;
+    height: 20rem;
+    transition: width 1s, height 1s;
+}
+.cuerpoHar:hover{
+    width: 20rem;
+    height: 21rem;
+}
+.destacado__letra{
+    color: black;
+    font-style: italic;
+    font-size: 1rem;
+    
+}
+}
+
+/*CELULARES RESPONSIVE*/
+@media only screen and (max-width: 575.98px) {
+    nav ul, footer {
+    flex-direction: column;
+    align-items: center;
+    
+    }
+.ordenTarjetas{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    
+}
+.producto {
+    width: 100%;
+}
+.cuerpoTarjeta{
+    align-items: center;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 10rem;
+    height: 20rem;
+    transition: width 1s, height 1s;
+}
+    
+.cuerpoTarjeta:hover{
+    width: 11rem;
+    height: 21rem;
+}
+
+}
