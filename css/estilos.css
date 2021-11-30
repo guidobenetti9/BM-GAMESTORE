@@ -12,6 +12,9 @@
 .encabezado__letra--padding {
   padding-top: 10px; }
 
+.encabezado__colores--letra {
+  color: black; }
+
 .color-titulo {
   background-color: #55acee; }
 
@@ -7836,7 +7839,8 @@ textarea.form-control-lg {
   background-color: #c25E30; }
 
 .ini {
-  width: 14rem; }
+  width: 14rem;
+  margin-top: 5px; }
 
 .ini__caja--fondo {
   background-color: black;
@@ -7847,7 +7851,7 @@ textarea.form-control-lg {
 
 .ini__caja--texto {
   color: white;
-  font-style: italic; }
+  font-style: normal; }
 
 /*NAVEGADOR*/
 .navegador {
