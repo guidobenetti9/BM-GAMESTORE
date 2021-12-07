@@ -154,6 +154,7 @@ $titulos:(titulo:#55acee, subtitulo:#c25E30 );
     font-style: italic;
 }
 .descripcion{ 
+    color: white;
     height: 4rem;
     display: flex;
     flex-direction: column;
@@ -171,7 +172,7 @@ $titulos:(titulo:#55acee, subtitulo:#c25E30 );
 }
 .ordenTarjetas {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
     margin: 2rem 0;
     gap: 1rem;
@@ -214,6 +215,7 @@ $titulos:(titulo:#55acee, subtitulo:#c25E30 );
 }
 /*novedades*/
 .descripcionNov{ 
+    color: white;
     height: 4rem;
     display: flex;
     flex-direction: column;
@@ -248,6 +250,7 @@ $titulos:(titulo:#55acee, subtitulo:#c25E30 );
 }
 /*HARDWARE*/
 .descripcionHar{ 
+    color: white;
     height: 4rem;
     display: flex;
     flex-direction: column;
@@ -293,13 +296,13 @@ $titulos:(titulo:#55acee, subtitulo:#c25E30 );
     }
 }
 /*TABLET RESPONSIVE*/
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
     nav ul, footer {
     flex-direction: column;
     align-items: center;
     }
 .ordenTarjetas{
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
 }
 .producto{
