@@ -10,10 +10,21 @@
   border: 2px solid black; }
 
 .encabezado__letra--padding {
-  padding-top: 10px; }
+  padding-top: 0px; }
 
 .encabezado__colores--letra {
   color: black; }
+
+.padding-Izq {
+  padding-left: 20px;
+  padding-top: 20px; }
+
+.margin-Top {
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+.margin-Icon {
+  margin-bottom: 25px; }
 
 .color-titulo {
   background-color: #55acee; }
@@ -7945,11 +7956,11 @@ textarea.form-control-lg {
   width: 33.33333%;
   border: 1px solid black;
   background-size: cover;
-  color: black;
+  color: white;
   background-size: cover;
   text-decoration: none;
   text-align: center;
-  background-image: linear-gradient(to top, white, blue);
+  background: darkblue;
   padding: 1vh; }
 
 /*JUEGOS*/
