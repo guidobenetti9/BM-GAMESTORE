@@ -30,6 +30,3 @@ git log o git log --oneline
 Cómo mergear?
 git checkout develop (nos paramos en la rama principal)
 git merge nombre-rama (mergeamos... traemos los cambios de esa rama a la rama principal)
-
-
-  

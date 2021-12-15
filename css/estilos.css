@@ -10,10 +10,21 @@
   border: 2px solid black; }
 
 .encabezado__letra--padding {
-  padding-top: 10px; }
+  padding-top: 0px; }
 
 .encabezado__colores--letra {
   color: black; }
+
+.padding-Izq {
+  padding-left: 20px;
+  padding-top: 20px; }
+
+.margin-Top {
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+.margin-Icon {
+  margin-bottom: 25px; }
 
 .color-titulo {
   background-color: #55acee; }
@@ -7945,11 +7956,11 @@ textarea.form-control-lg {
   width: 33.33333%;
   border: 1px solid black;
   background-size: cover;
-  color: black;
+  color: white;
   background-size: cover;
   text-decoration: none;
   text-align: center;
-  background-image: linear-gradient(to top, white, blue);
+  background: darkblue;
   padding: 1vh; }
 
 /*JUEGOS*/
@@ -7968,6 +7979,7 @@ textarea.form-control-lg {
   font-style: italic; }
 
 .descripcion {
+  color: white;
   height: 4rem;
   display: flex;
   flex-direction: column;
@@ -7985,7 +7997,7 @@ textarea.form-control-lg {
 
 .ordenTarjetas {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr;
   margin: 2rem 0;
   gap: 1rem;
@@ -8026,6 +8038,7 @@ textarea.form-control-lg {
 
 /*novedades*/
 .descripcionNov {
+  color: white;
   height: 4rem;
   display: flex;
   flex-direction: column;
@@ -8059,6 +8072,7 @@ textarea.form-control-lg {
 
 /*HARDWARE*/
 .descripcionHar {
+  color: white;
   height: 4rem;
   display: flex;
   flex-direction: column;
@@ -8108,12 +8122,12 @@ textarea.form-control-lg {
   height: 3rem; }
 
 /*TABLET RESPONSIVE*/
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
   nav ul, footer {
     flex-direction: column;
     align-items: center; }
   .ordenTarjetas {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr; }
   .producto {
     width: 100%; }

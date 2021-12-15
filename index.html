@@ -11,10 +11,10 @@
 
 </head>
 <body class="bg-dark">
-    <header>   
+  <header>   
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="index.html">
                 <img src="imagenes/BM GAMESTORE.png" alt="" width="100" height="100" class="d-inline-block align-text-top">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,9 +23,9 @@
             <div class="collapse navbar-collapse" id="navbarScroll">
                 <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
                     <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+                      <a class="nav-link active fs-5" aria-current="page" href="index.html">INICIO</a>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown fs-5">
                         <a class="nav-link dropdown-toggle" href="PAGES/juegos.html" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           JUEGOS
                         </a>
@@ -37,15 +37,15 @@
                       </ul>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="PAGES/novedades.html">NOVEDADES</a>
+                      <a class="nav-link fs-5" href="PAGES/novedades.html">NOVEDADES</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="PAGES/consolas.html">CONSOLAS</a>
+                      <a class="nav-link fs-5" href="PAGES/consolas.html">CONSOLAS</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="PAGES/hardware.html">HARDWARE</a>
+                      <a class="nav-link fs-5" href="PAGES/hardware.html">HARDWARE</a>
                     </li><li class="nav-item">
-                      <a class="nav-link" href="PAGES/nosotros.html">NOSOTROS</a>
+                      <a class="nav-link fs-5" href="PAGES/nosotros.html">NOSOTROS</a>
                     </li>
                 </ul>
                 <form class="d-flex">
@@ -57,37 +57,65 @@
         </div>
       </nav>
 
-    </header>
-    <section class="encabezado encabezado__colores--fondo"> 
+  </header>
+    <section class="encabezado__colores--fondo"> 
         <!--TITULO-->
-        <h1 class="encabezado__letra--padding"> <span class="encabezado__colores--letra"> BM GAMESTORE </span> </h1> 
-    </section>
-      <div class="ini ini__caja--fondo">
-          <!--INICIO DE SESION-->
-                <h2> <span class="ini__caja--texto"> BIENVENIDO </span> </h2>
-                <h2> <span class="ini__caja--texto"> INICIE SESION </span> </h2>  
-                      
-                <form action="send.php" method="post" enctype="text/plain">
-                <input type="text" name="nombre" placeholder="ingrese su nombre"> 
-                <input type="password" name="contrasenia" placeholder="ingrese contraseña">
-                <input type="submit" name="enviar">
-                <input type="reset" name="resetear">
-                </form>
-                <p> <span class="ini__caja--texto"> ¿no tienes usuario? </span></p>
-                <a href="../PAGES/crear_user.html" class="ini__caja--texto"> <span> Para registrarte clickea aqui! </span> </a>
+         
+        <div>
+            <h2 class="encabezado encabezado__letra--padding text-light fs-1"> BIENVENIDO A BLACK MARKET GAMESTORE </h2>
+        </div>
+      <section class="container-fluid">
         
-      </div>
-      <div class="container bg-primary p-2 bg-opacity-75">
+        <div class="padding-Izq">
+          
+          <img src="imagenes/user.png" class="facebook-tamanio">
+        
+        </div>
+          <span class="padding-Izq">Ingresar </span> 
+      
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+              <strong>Cuenta </strong>
+            </button>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                <li>
+                    <div class="d-flex justify-content-start">
+                    <!--INICIO DE SESION-->
+                    <form class="row g-0">
+                      <div class="mb-2">
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="email@ejemplo.com">
+                      </div>
+                      <div class="mb-2">
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="password">
+                      </div>
+                      <button type="submit" class="btn btn-primary">Log in</button>
+                    </form>
+                  </div>
+                </li>
+              
+              </ul>
+          </div>     
+      </section>
+          
+        
+
+    </section>
+     
+    <section class="container bg-primary p-2 bg-opacity-75 margin-Top">
         <div class="row">
-          <div class="col-sm-2" >
-            <h4 class="destacado destacado__letra text-start bg-success p-2  bg-opacity-75">
-              Destacados 
-               <span class="fw-bold">GAMING </span> 
-            </h4>
+          <div class="container justify-content-evenly">
+           <span class="d-flex justify-content-evenly"> 
+              <h4 class="destacado destacado__letra bg-success p-2  bg-opacity-75 h-100 d-inline-block">
+                  Destacados 
+                <span class="fw-bold">GAMING </span> 
+              </h4>
+           </span> 
           </div>
-          <div class="col-sm-10">
-            <section class="ordenTarjetas"> 
+          <div class="col-sm-4">
+            
+            <section class="ordenTarjetas d-flex justify-content-evenly"> 
            
+<<<<<<< HEAD
               <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                           <div class="carousel-item active d-flex flex-row justify-content-evenly">
@@ -158,25 +186,236 @@
                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
                            <span class="visually-hidden">Next</span>
                           </button>
+=======
+              
+              <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <article class="cuerpoTarjeta m-2">
+                      <div class="imagenTamanio">
+                          <!--IMAGENES DE JUEGOS-->     
+                          <a href="PAGES/farcry.html"> <img src="imagenes/FAR-CRY-66.png" > </a>      
+                      </div>
+                      <!--PRECIOS-->
+                      <div class="descripcion">
+                          <h3> FAR CRY 6 </h3>   
+                          <P>5000$</P>
+                          <a href="#">COMPRAR</a>
+                      </div>
+                    </article>
+                  </div>
+
+                  <div class="carousel-item">
+                    <article class="cuerpoTarjeta m-2">
+                      <!--IMAGENES DE JUEGOS -->
+                    <div class="imagenTamanio">
+                      <a href="PAGES/eldenring.html"> <img src="imagenes/ps5-elden-ring.jpg"> </a>
+>>>>>>> cambios
                     </div>
+          
+                    <div class="descripcion">
+                          <!--PRECIOS-->
+                          <h3> ELDEN RING </h3> 
+                          <p>5000$</p> 
+                          <a href="#">COMPRAR</a>
+                    </div>
+                    
+                    
+                    
+                    </article>
+                  </div>
+                  <div class="carousel-item">
+                    <article class="cuerpoTarjeta m-2">
+                      <!--IMAGENES DE JUEGOS -->
+                        <div class="imagenTamanio">
+                        <a href="PAGES/fifa22.html"> <img src="imagenes/FIFA22.png"> </a>
+                        </div>
+                        <div class="descripcion">
+                        <!--PRECIOS-->
+                        <h3> FIFA 22 </h3>   
+                        <P>5000$</P>
+                        <a href="#">COMPRAR</a>
+                        </div>
+            
+                  </article>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </section>
+          </div>
+          <div class="col-sm-4">
+            
+            <section class="ordenTarjetas d-flex justify-content-evenly"> 
+           
+              
+              <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <article class="cuerpoTarjeta m-2">
+                      <div class="imagenTamanio">
+                          <!--IMAGENES DE JUEGOS-->     
+                          <a href="PAGES/farcry.html"> <img src="imagenes/FAR-CRY-66.png" > </a>      
+                      </div>
+                      <!--PRECIOS-->
+                      <div class="descripcion">
+                          <h3> FAR CRY 6 </h3>   
+                          <P>5000$</P>
+                          <a href="#">COMPRAR</a>
+                      </div>
+                    </article>
+                  </div>
+
+                  <div class="carousel-item">
+                    <article class="cuerpoTarjeta m-2">
+                      <!--IMAGENES DE JUEGOS -->
+                    <div class="imagenTamanio">
+                      <a href="PAGES/eldenring.html"> <img src="imagenes/ps5-elden-ring.jpg"> </a>
+                    </div>
+          
+                    <div class="descripcion">
+                          <!--PRECIOS-->
+                          <h3> ELDEN RING </h3> 
+                          <p>5000$</p> 
+                          <a href="#">COMPRAR</a>
+                    </div>
+                    
+                    
+                    
+                    </article>
+                  </div>
+                  <div class="carousel-item">
+                    <article class="cuerpoTarjeta m-2">
+                      <!--IMAGENES DE JUEGOS -->
+                        <div class="imagenTamanio">
+                        <a href="PAGES/fifa22.html"> <img src="imagenes/FIFA22.png"> </a>
+                        </div>
+                        <div class="descripcion">
+                        <!--PRECIOS-->
+                        <h3> FIFA 22 </h3>   
+                        <P>5000$</P>
+                        <a href="#">COMPRAR</a>
+                        </div>
+            
+                  </article>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </section>
+          </div>
+
+          <div class="col-sm-4">
+            
+            <section class="ordenTarjetas d-flex justify-content-evenly"> 
+           
+              
+              <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <article class="cuerpoTarjeta m-2">
+                      <div class="imagenTamanio">
+                          <!--IMAGENES DE JUEGOS-->     
+                          <a href="PAGES/farcry.html"> <img src="imagenes/FAR-CRY-66.png" > </a>      
+                      </div>
+                      <!--PRECIOS-->
+                      <div class="descripcion">
+                          <h3> FAR CRY 6 </h3>   
+                          <P>5000$</P>
+                          <a href="#">COMPRAR</a>
+                      </div>
+                    </article>
+                  </div>
+
+                  <div class="carousel-item">
+                    <article class="cuerpoTarjeta m-2">
+                      <!--IMAGENES DE JUEGOS -->
+                    <div class="imagenTamanio">
+                      <a href="PAGES/eldenring.html"> <img src="imagenes/ps5-elden-ring.jpg"> </a>
+                    </div>
+          
+                    <div class="descripcion">
+                          <!--PRECIOS-->
+                          <h3> ELDEN RING </h3> 
+                          <p>5000$</p> 
+                          <a href="#">COMPRAR</a>
+                    </div>
+                    
+                    
+                    
+                    </article>
+                  </div>
+                  <div class="carousel-item">
+                    <article class="cuerpoTarjeta m-2">
+                      <!--IMAGENES DE JUEGOS -->
+                        <div class="imagenTamanio">
+                        <a href="PAGES/fifa22.html"> <img src="imagenes/FIFA22.png"> </a>
+                        </div>
+                        <div class="descripcion">
+                        <!--PRECIOS-->
+                        <h3> FIFA 22 </h3>   
+                        <P>5000$</P>
+                        <a href="#">COMPRAR</a>
+                        </div>
+            
+                  </article>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
               </div>
             </section>
           </div>
       
         </div>
       
-      </div>
+    </section>
     
     
     <div>
-        <!--ICONOS DE CONTACTOS-->
-        <img src="imagenes/facebook.png" class=" facebook-tamanio ">
-        <img src="imagenes/instagra.jpg" class=" instagra-tamanio">
-        <img src="imagenes/contacto.jpg" class="contacto-tamanio ">
-
+                <!--ICONOS DE CONTACTOS-->
+        <img src="imagenes/facebook.png" class=" facebook-tamanio margin-Icons">
+        <img src="imagenes/ìnstagram.png" class=" instagra-tamanio margin-Icon">
+        <img src="imagenes/whatsapp.png" class="contacto-tamanio margin-Icon">
+        
     </div>
     <footer>
-        <ul class="container-fluid footer ">
+        <ul class="container-fluid footer">
           <li class="footer__caja--estilos"> <a href="../PAGES/nosotros.html" class="listaSinPuntos" > NOSOTROS </a> </li> 
           <li class="footer__caja--estilos"> <a href="#" class="listaSinPuntos " >SERVICIO TECNICO </a>  </li> 
           <li class="footer__caja--estilos "> <a href="#" class="listaSinPuntos"> METODO DE PAGO </a> </li> 
