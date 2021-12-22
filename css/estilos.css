@@ -17,7 +17,8 @@
 
 .padding-Izq {
   padding-left: 20px;
-  padding-top: 20px; }
+  padding-top: 20px;
+  padding-right: 20px; }
 
 .margin-Top {
   margin-top: 50px;
@@ -27,7 +28,8 @@
   margin-bottom: 25px; }
 
 .margin-Logo {
-  margin-bottom: 12.5px; }
+  margin-bottom: 12.5px;
+  margin-left: 12.5px; }
 
 .nosotros-Link {
   text-align: center;

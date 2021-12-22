@@ -24,6 +24,7 @@ $caja_footer:100%;
 .padding-Izq{
  padding-left: $espaciado*4;
  padding-top: $espaciado*4;
+ padding-right: $espaciado*4;
 }
 
 .margin-Top{
@@ -35,6 +36,7 @@ $caja_footer:100%;
 }
 .margin-Logo{
     margin-bottom: $espaciado*2.5;
+    margin-left: $espaciado*2.5;
 }
 .nosotros-Link{
     text-align: center;
